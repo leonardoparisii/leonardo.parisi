@@ -18,7 +18,7 @@ const Work = () => {
         </p>
     );
   return (
-    <div className="flex w-full justify-start items-start xl:-mt-20 px-12 sm:px-24 md:px-36">
+    <div className="flex w-full justify-start items-start xl:-mt-6 px-12 sm:px-24 md:px-36">
         <div className="flex flex-col gap-6 w-full">
             <div className="flex flex-col gap-2">
                 <Title
