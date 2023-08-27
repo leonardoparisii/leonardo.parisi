@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { ButtonProps } from "@/types/index";
 
 export default function Button({ title, onClick, customStyle }: ButtonProps) {

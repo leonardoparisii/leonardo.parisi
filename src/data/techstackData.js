@@ -1,6 +1,6 @@
-import { ImHtmlFive } from 'react-icons/im'
-import { SiCss3, SiTailwindcss, SiNextdotjs, SiMongodb, SiPrisma } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
+import { ImHtmlFive } from "react-icons/im"
+import { SiCss3, SiTailwindcss, SiNextdotjs, SiMongodb, SiPrisma } from "react-icons/si"
+import { FaReact } from "react-icons/fa"
 
 export const TechData = [
     {

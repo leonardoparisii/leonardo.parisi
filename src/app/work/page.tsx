@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import FilterBar from "@/components/FilterBar"
 import Text from "@/components/ui/Text"
 import Title from "@/components/ui/Title"
@@ -9,16 +9,16 @@ import Link from "next/link"
 
 const Work = () => {
     const params = useSearchParams();
-    const data = params.get('filter')
+    const data = params.get("filter")
     const filteredData = getFilteredData(data);
     const text = (
         <p>
             Each and every project I embarked upon became a stepping <br className="hidden sm:block"/> stone of profound value, each offering its own unique and <br/> remarkable contribution to my growth and learning journey.<br className="hidden sm:block"/><br className="hidden sm:block"/>
-            you can explore all of them by clicking <Link target="__blank" href='https://github.com/leonardoparisii' className="text-white font-semibold font-mulish underline cursor-pointer">here</Link>.
+            you can explore all of them by clicking <Link target="__blank" href="https://github.com/leonardoparisii" className="text-white font-semibold font-mulish underline cursor-pointer">here</Link>.
         </p>
     );
   return (
-    <div className='flex w-full justify-start items-start xl:-mt-20 px-12 sm:px-24 md:px-36'>
+    <div className="flex w-full justify-start items-start xl:-mt-20 px-12 sm:px-24 md:px-36">
         <div className="flex flex-col gap-6 w-full">
             <div className="flex flex-col gap-2">
                 <Title

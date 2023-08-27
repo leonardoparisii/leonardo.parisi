@@ -7,7 +7,7 @@ const About = () => {
 
     const text = (
         <p className="font-bold text-[17px]" id="about">
-            I'm Leonardo Parisi, a  deeply passionate Frontend developer. <br/>
+            I"m Leonardo Parisi, a  deeply passionate Frontend developer. <br/>
             I like to build dynamic and engaging user experiences through<br/>
             my proficiency with the <span className="text-white font-semibold font-mulish">best and latest technologies</span>. <br />
             With a keen eye for design aesthetics and a commitment <br />
@@ -15,7 +15,7 @@ const About = () => {
             I consistently strive to transform intricate ideas into intuitive, <br />
             visually appealing digital solutions.
             <br /><br />
-            You can read my resume at <Link target="__blank" href='https://read.cv/leonardoparisi' className="text-white font-semibold font-mulish underline cursor-pointer">read.cv/leonardoparisi</Link>.
+            You can read my resume at <Link target="__blank" href="https://read.cv/leonardoparisi" className="text-white font-semibold font-mulish underline cursor-pointer">read.cv/leonardoparisi</Link>.
         </p>
     )
   return (
