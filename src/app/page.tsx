@@ -25,10 +25,10 @@ export default function Home() {
                 />
                 <div className="flex flex-col w-full gap-16 justify-between items-start my-auto">
                     <Title
-                        title="Hi, I"m Leonardo!"
+                        title="Hi, I'm Leonardo!"
                     />
                     <Text
-                        text="I"m Leonardo Parisi."
+                        text="I'm Leonardo Parisi."
                         secondaryText={secondaryText}
                     />
                 </div>
