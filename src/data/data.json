@@ -55,13 +55,15 @@
             "type": "Fullstack",
             "image": "/Postify.png",
             "url": ""
+        },
+        {
+            "text": "Topgames shop",
+            "image": "/Topgames-shop.png",
+            "type": "Fullstack",
+            "url": "https://topgames-shop.com"
         }
     ],
     "works": [
-        {
-            "text": "Topgames shop",
-            "image": "/Topgames",
-            "url": "https://topgames-shop.com"
-        }
+
     ]
 }
