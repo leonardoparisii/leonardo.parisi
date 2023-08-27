@@ -1,0 +1,67 @@
+{
+    "socials": [
+        {
+            "name": "X",
+            "icon": "twitter",
+            "url": "https://twitter.com/_leoparisi"
+        },
+        {
+            "name": "Github",
+            "icon": "github",
+            "url": "https://github.com/leonardoparisii"
+        }
+    ],
+    "navData": [
+        {
+            "text": "About",
+            "url": "#about"
+        },
+        {
+            "text": "Contact",
+            "url": "#contact"
+        },
+        {
+            "text": "Work",
+            "url": "/work/?filter=All"
+        }
+    ],  
+    "projects": [
+        {
+            "text": "Airbnb clone",
+            "image": "/Airbnb-clone.png",
+            "type": "Fullstack",
+            "url": "https://airbnb-clone-one-woad.vercel.app"
+        },
+        {
+            "text": "Tasty Bites",
+            "image": "/Tasty-bites.png",
+            "type": "Frontend",
+            "url": ""
+        },
+        {
+            "text": "Meteorify",
+            "type": "Frontend",
+            "image": "/Meteorify.png",
+            "url": ""
+        },
+        {
+            "text": "Motiondrive",
+            "type": "Frontend",
+            "image": "/Motiondrive.png",
+            "url": ""
+        },
+        {
+            "text": "Postify",
+            "type": "Fullstack",
+            "image": "/Postify.png",
+            "url": ""
+        }
+    ],
+    "works": [
+        {
+            "text": "Topgames shop",
+            "image": "/Topgames",
+            "url": "https://topgames-shop.com"
+        }
+    ]
+}
