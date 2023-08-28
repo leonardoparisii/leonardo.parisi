@@ -19,4 +19,6 @@ Embracing the latest in web technologies, my portfolio leverages:
 
 - Next.js
 
+- React-spring
+
 Explore my portfolio to dive into a world where technology and creativity converge to bring my skills and accomplishments to life. Your journey through my website will provide insights into my capabilities, projects, and aspirations.
