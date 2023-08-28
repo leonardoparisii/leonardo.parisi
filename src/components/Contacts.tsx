@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Text from "./ui/Text";
 import Title from "./ui/Title";
-
+const Fade = require("react-reveal/Fade")
 
 const Contact = () => {
 
@@ -19,22 +19,26 @@ const Contact = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
         <div className="flex flex-col gap-7">
-            <Title
-                title="Contacts."
-                customStyle="font-medium text-4xl"
-            />
-            <Text
-                text={text}
-            />
+            <Fade duration={1000} delay={2200} bottom>   
+                <Title
+                    title="Contacts."
+                    customStyle="font-medium text-4xl"
+                />
+                <Text
+                    text={text}
+                    />
+            </Fade>
         </div>
         <div className="flex flex-col">
-            <Text
-                text="Email"
-                customStyle="text-semibold font-inter text-slate-500"
-            />
-            <Text
-                text={email}
-            />
+            <Fade duration={1000} delay={2600} bottom>   
+                <Text
+                    text="Email"
+                    customStyle="text-semibold font-inter text-slate-500"
+                />
+                <Text
+                    text={email}
+                />
+            </Fade>
         </div>
     </div>
   )

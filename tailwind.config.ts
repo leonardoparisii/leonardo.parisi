@@ -15,7 +15,7 @@ const config: Config = {
         },
       },
       animation: {
-        "border": "border 10s ease-in-out infinite",
+        "border": "border 8s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

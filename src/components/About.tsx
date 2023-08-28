@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Text from "./ui/Text";
 import Title from "./ui/Title";
-
+const Fade = require("react-reveal/Fade")
 
 const About = () => {
 
@@ -20,6 +20,7 @@ const About = () => {
     )
   return (
     <div className="flex flex-col gap-2 w-full">
+        <Fade  duration={1000} bottom>
             <Title
                 title="About."
                 customStyle="font-medium text-4xl"
@@ -27,6 +28,7 @@ const About = () => {
             <Text
                 text={text}
             />
+        </Fade>
     </div>
   )
 }
