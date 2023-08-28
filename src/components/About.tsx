@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Text from "./ui/Text";
 import Title from "./ui/Title";
-const Fade = require("react-reveal/Fade")
+import { useSpring, animated } from '@react-spring/web';
 
 const About = () => {
+    // Animation hook for the about section
+    const aboutSectionAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(20px)' },to: { opacity: 1, transform: 'translateY(0)' },delay: 3400,config: { duration: 800 },
+    });
 
     const text = (
         <p className="font-bold text-[17px]" id="about">
@@ -17,20 +21,23 @@ const About = () => {
             <br /><br />
             You can read my resume at <Link target="__blank" href="https://read.cv/leonardoparisi" className="text-white font-semibold font-mulish underline cursor-pointer">read.cv/leonardoparisi</Link>.
         </p>
-    )
-  return (
-    <div className="flex flex-col gap-2 w-full">
-        <Fade  duration={800} bottom>
-            <Title
-                title="About."
-                customStyle="font-medium text-4xl"
-            />
-            <Text
-                text={text}
-            />
-        </Fade>
-    </div>
-  )
-}
+    );
 
-export default About
+    return (
+        <div className="flex flex-col gap-2 w-full">
+            <animated.div style={useSpring({from: { opacity: 0, transform: 'translateY(20px)' },to: { opacity: 1, transform: 'translateY(0)' },delay: 2600,config: { duration: 800 },})}>
+                <Title
+                    title="About."
+                    customStyle="font-medium text-4xl"
+                />
+            </animated.div>
+            <animated.div style={useSpring({from: { opacity: 0, transform: 'translateY(20px)' },to: { opacity: 1, transform: 'translateY(0)' },delay: 3000,config: { duration: 800 },})}>
+                <Text
+                    text={text}
+                />
+            </animated.div>
+        </div>
+    );
+};
+
+export default About;
