@@ -14,5 +14,5 @@ export interface TitleProps {
 export interface ButtonProps {
     title: string;
     customStyle?: string;
-    onClick: () => void;
+    onClick?: () => void;
 }

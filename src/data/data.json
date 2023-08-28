@@ -14,12 +14,10 @@
     "navData": [
         {
             "text": "About",
-            "displayed": "/",
             "url": "#about"
         },
         {
             "text": "Contact",
-            "displayed": "/",
             "url": "#contact"
         },
         {

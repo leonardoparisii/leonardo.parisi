@@ -6,8 +6,8 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Hi, I\"m Leonardo",
-  description: "I\"m Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+  title: "Hi, I\'m Leonardo",
+  description: "I\'m Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
   authors: [{
     name: "Leonardo Parisi",
     url: "",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     openGraph: {
         siteName: "",
         url: "",
-        title: "Hi, I\"m Leonardo",
-        description: "I\"m Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+        title: "Hi, I\'m Leonardo",
+        description: "I\'m Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
         type: "website"
     },
     robots: {
