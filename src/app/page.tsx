@@ -17,7 +17,7 @@ export default function Home() {
     <div className="flex w-full justify-center items-start mt-8 md:mt-24">
         <div className="flex flex-col justify-center items-center gap-24 lg:px-0 sm:px-12 px-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-24 h-full">
-                <Fade duration={1400} delay={300} bottom>
+                <Fade duration={1200} delay={100} bottom>
                     <Image
                         src={ProfileImage}
                         alt="ProfileImage"
@@ -28,7 +28,7 @@ export default function Home() {
                         />
                 </Fade>
                     <div className="flex flex-col w-full gap-16 justify-between items-start my-auto">
-                        <Fade duration={1400} delay={600} bottom>
+                        <Fade duration={1200} delay={400} bottom>
                             <Title
                                 title="Hi, I'm Leonardo!"
                                 />
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <div className="flex gap-12">
                 <div className="flex-row gap-12 items-center hidden md:flex">
-                    <Fade duration={1400} delay={1000} bottom>
+                    <Fade duration={1200} delay={800} bottom>
                         <Text 
                             text="TECH STACK"
                             customStyle="font-bold text-xl text-white mt-1 font-inter"
@@ -53,7 +53,7 @@ export default function Home() {
                     </Fade>
                 </div>
                 <div className="flex flex-row gap-6 items-center justify-center mt-1" id="tech-stack">
-                    <Fade duration={1400} delay={1500} bottom cascade>
+                    <Fade duration={1200} delay={1300} bottom cascade>
                         {TechData.map((item) => (
                             <div className="text-[26px] h-fit w-fit" key={item.name}>
                                 {item.icon}

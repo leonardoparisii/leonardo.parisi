@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
         <div className="flex flex-col gap-7">
-            <Fade duration={1000} delay={2200} bottom>   
+            <Fade duration={800} delay={2000} bottom>   
                 <Title
                     title="Contacts."
                     customStyle="font-medium text-4xl"

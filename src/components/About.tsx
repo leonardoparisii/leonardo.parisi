@@ -20,7 +20,7 @@ const About = () => {
     )
   return (
     <div className="flex flex-col gap-2 w-full">
-        <Fade  duration={1000} bottom>
+        <Fade  duration={800} bottom>
             <Title
                 title="About."
                 customStyle="font-medium text-4xl"
