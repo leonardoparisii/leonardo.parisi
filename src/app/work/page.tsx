@@ -11,6 +11,7 @@ const Work = () => {
     const params = useSearchParams();
     const data = params.get("filter")
     const filteredData = getFilteredData(data);
+
     const text = (
         <p>
             Each and every project I embarked upon became a stepping <br className="hidden sm:block"/> stone of profound value, each offering its own unique and <br/> remarkable contribution to my growth and learning journey.<br className="hidden sm:block"/><br className="hidden sm:block"/>

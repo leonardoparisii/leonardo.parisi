@@ -4,10 +4,6 @@ import Title from "./ui/Title";
 import { useSpring, animated } from '@react-spring/web';
 
 const About = () => {
-    // Animation hook for the about section
-    const aboutSectionAnimation = useSpring({
-        from: { opacity: 0, transform: 'translateY(20px)' },to: { opacity: 1, transform: 'translateY(0)' },delay: 3400,config: { duration: 800 },
-    });
 
     const text = (
         <p className="font-bold text-[17px]" id="about">
