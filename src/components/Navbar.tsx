@@ -17,11 +17,11 @@ const Navbar = () => {
                 Leonardo Parisi
             </Link>
         </div>
-        <div className="flex justify-center gap-4 md:rounded-none rounded-full md:border-none border md:relative fixed md:bottom-0 bottom-16 md:p-0 md:px-0 p-2 px-4 border-slate-800 md:bg-transparent bg-slate-800/70 md:backdrop-blur-none backdrop-blur-3xl md:w-full w-fit">
+        <div className="z-50 flex justify-center gap-4 md:rounded-none rounded-full md:border-none border md:relative fixed md:bottom-0 bottom-16 md:p-0 md:px-0 p-2 px-4 border-slate-800 md:bg-transparent bg-slate-800/70 md:backdrop-blur-none backdrop-blur-3xl md:w-full w-fit">
                 {!home && (
-                    <div className="hover:text-white focus:text-white text-sm font-semibold font-mulish text-slate-300/70 transition-colors cursor-pointer">
+                    <Link href='/' className="hover:text-white focus:text-white text-sm font-semibold font-mulish text-slate-300/70 transition-colors cursor-pointer">
                         Home
-                    </div>
+                    </Link>
                 )}
             {data.navData.map((item, i) => (
                 <>

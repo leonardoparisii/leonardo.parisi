@@ -44,7 +44,7 @@ const Contact = () => {
                     />
             </animated.div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col" id='contacts'>
             <animated.div style={emailSectionAnimation}>   
                 <Text
                     text="Email"
