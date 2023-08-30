@@ -41,13 +41,15 @@ const Work = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
                 {filteredData.map((item: any) => (
                     <animated.div style={animation} key={item.text} className="flex flex-col gap-4 items-center text-lg text-white font-mulish font-semibold cursor-pointer">
-                        <Image
-                            alt="image"
-                            src={item.image}
-                            width={200}
-                            height={200}
-                            className="rounded-xl"
-                        />
+                        <Link href={item.url} className="rounded-xl">
+                            <Image
+                                alt="image"
+                                src={item.image}
+                                width={200}
+                                height={200}
+                                className="rounded-xl"
+                            />
+                        </Link>
                         {item.text}
                     </animated.div>
                 ))}
