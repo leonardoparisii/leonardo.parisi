@@ -1,4 +1,3 @@
-import { useSearchParams } from "next/navigation";
 import data from "@/data/data.json";
 
 export function getFilteredData(filter: any) {
