@@ -38,7 +38,7 @@
             "text": "Tasty Bites",
             "image": "/Tasty-bites.png",
             "type": "Frontend",
-            "url": ""
+            "url": "https://tastybites-2afli96we-parisileonardo15-gmailcom.vercel.app/discover"
         },
         {
             "text": "Meteorify",
@@ -50,12 +50,6 @@
             "text": "Motiondrive",
             "type": "Frontend",
             "image": "/Motiondrive.png",
-            "url": ""
-        },
-        {
-            "text": "Postify",
-            "type": "Fullstack",
-            "image": "/Postify.png",
             "url": ""
         },
         {

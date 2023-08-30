@@ -26,12 +26,10 @@ const Navbar = () => {
             {data.navData.map((item, i) => (
                 <>
                 {!home ? (
-                    <div className="hidden">
-                    
-                    </div>
+                    <div className="hidden" />   
                     ) : (
                         <Link key={i} href={item.url}>
-                            <div className="hover:text-white focus:text-white text-sm font-semibold font-mulish text-slate-300/70 transition-colors">
+                            <div className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors">
                                 {item.text}
                             </div>
                         </Link>
