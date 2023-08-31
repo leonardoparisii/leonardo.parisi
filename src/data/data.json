@@ -36,7 +36,7 @@
             "text": "Tasty Bites",
             "image": "/Tasty-bites.png",
             "type": "Frontend",
-            "url": "https://tastybites-beta.vercel.app/discover"
+            "url": "https://tasty-bites-rust.vercel.app"
         },
         {
             "text": "Meteorify",
