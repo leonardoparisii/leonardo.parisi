@@ -55,6 +55,12 @@
             "image": "/Topgames-shop.png",
             "type": "Fullstack",
             "url": "https://topgames-shop.com"
+        },
+        {
+            "text": "Thotz",
+            "image": "/Thotz.png",
+            "type": "Fullstack",
+            "url": "/"
         }
     ],
     "works": [
