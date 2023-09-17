@@ -1,5 +1,5 @@
 import { ImHtmlFive } from "react-icons/im"
-import { SiCss3, SiTailwindcss, SiNextdotjs, SiMongodb, SiPrisma } from "react-icons/si"
+import { SiCss3, SiTailwindcss, SiNextdotjs, SiMongodb } from "react-icons/si"
 import { FaReact } from "react-icons/fa"
 
 export const TechData = [
@@ -26,9 +26,5 @@ export const TechData = [
     {
         "name": "mongodb",
         "icon": <SiMongodb />
-    },
-    {
-        "name": "prisma",
-        "icon": <SiPrisma />
     }
 ]
