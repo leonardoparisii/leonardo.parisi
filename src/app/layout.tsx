@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "@/styles/global.css";
 import type { Metadata } from "next";
-import Container from "@/components/Container";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "@/components/Footer";
 
@@ -42,12 +41,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Container>
-          <Navbar />
-          {children}
+      <body className="flex-col h-screen flex items-center justify-between mx-auto relative">
+        <Navbar />
+        <div className="h-full flex flex-col items-center justify-between w-full">
+          <div className="flex-col flex items-center relative py-12 md:py-20">
+            {children}
+          </div>
           <Footer />
-        </Container>
+        </div>
       </body>
     </html>
   );
