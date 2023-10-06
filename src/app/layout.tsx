@@ -41,14 +41,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-[2520px] flex-col h-screen flex items-center mx-auto relative">
-        <Navbar />
-        <div className="min-h-full flex flex-col w-full">
-          <div className="flex-col h-full flex items-center relative py-12 md:py-20">
-            {children}
-          </div>
-          <Footer />
+      <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
+        <div className="flex flex-col w-full">
+          <Navbar />
+          <div className="py-20">{children}</div>
         </div>
+        <Footer />
       </body>
     </html>
   );

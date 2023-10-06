@@ -10,7 +10,7 @@ const Navbar = () => {
   console.log(path);
 
   return (
-    <div className="w-full left-0 top-0 py-3 sm:py-4 px-6 box-border flex items-center justify-center">
+    <div className="w-full py-3 sm:py-4 px-6 box-border flex items-center justify-center">
       <div className="w-full flex justify-start">
         <Link
           href="/"
@@ -34,7 +34,10 @@ const Navbar = () => {
               <div className="hidden" />
             ) : (
               <Link key={i} href={item.url}>
-                <div className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors">
+                <div
+                  className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors"
+                  translate="no"
+                >
                   {item.text}
                 </div>
               </Link>
