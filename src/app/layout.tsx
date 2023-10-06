@@ -41,10 +41,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex-col h-screen flex items-center justify-between mx-auto relative">
+      <body className="max-w-[2520px] flex-col h-screen flex items-center mx-auto relative">
         <Navbar />
-        <div className="h-full flex flex-col items-center justify-between w-full">
-          <div className="flex-col flex items-center relative py-12 md:py-20">
+        <div className="min-h-full flex flex-col w-full">
+          <div className="flex-col h-full flex items-center relative py-12 md:py-20">
             {children}
           </div>
           <Footer />
