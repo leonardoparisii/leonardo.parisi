@@ -10,7 +10,7 @@ import About from "@/components/About";
 
 export default function Home() {
   const secondaryText = (
-    <p>
+    <p className="text-xl">
       A 16-year-old junior frontend <br className="md:hidden" /> developer based
       in Italy.
     </p>
@@ -51,12 +51,13 @@ export default function Home() {
               draggable={false}
             />
           </animated.div>
-          <div className="flex flex-col w-full gap-16 justify-between items-start my-auto">
-            <animated.div style={textAnimation}>
-              <Title title="Hi, I'm Leonardo!" />
-              <Text text="I'm Leonardo Parisi." secondaryText={secondaryText} />
-            </animated.div>
-          </div>
+          <animated.div
+            style={textAnimation}
+            className="flex flex-col w-full gap-6 items-start my-auto"
+          >
+            <Title title="Hi, I'm Leonardo!" />
+            <Text text="I'm Leonardo Parisi." secondaryText={secondaryText} />
+          </animated.div>
         </div>
         <div className="flex gap-12">
           <animated.div

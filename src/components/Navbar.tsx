@@ -23,7 +23,7 @@ const Navbar = () => {
         {!home && (
           <Link
             href="/"
-            className="hover:text-white focus:text-white text-sm font-semibold font-mulish text-slate-300/70 transition-colors cursor-pointer"
+            className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors cursor-pointer"
           >
             Home
           </Link>
