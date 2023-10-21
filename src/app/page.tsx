@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="flex w-full justify-center items-start">
-      <div className="flex flex-col justify-center items-center gap-24 lg:px-0 sm:px-12 px-4">
+      <div className="flex flex-col justify-center items-center gap-24 lg:px-0 px-6 sm:px-24">
         <div className="flex flex-col md:flex-row items-center justify-center gap-24 h-full">
           <animated.div style={imageAnimation}>
             <Image
