@@ -10,10 +10,10 @@ const Navbar = () => {
   console.log(path);
 
   return (
-    <div className="w-full py-3 sm:py-4 px-6 box-border flex items-center justify-center">
+    <header className="w-full py-3 sm:py-4 px-6 box-border flex items-center justify-center fixed bg-[#01030f] z-50">
       <div className="w-full flex justify-start">
         <Link
-          href="/"
+          href={{ pathname: "/" }}
           className="font-source text-xl md:text-2xl font-bold text-white cursor-pointer"
         >
           Leonardo Parisi
@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="z-50 flex justify-center gap-4 md:rounded-none rounded-full md:border-none border md:relative fixed md:bottom-0 bottom-16 md:p-0 md:px-0 p-2 px-4 border-slate-800 md:bg-transparent bg-slate-800/70 md:backdrop-blur-none backdrop-blur-3xl md:w-full w-fit">
         {!home && (
           <Link
-            href="/"
+            href={{ pathname: "/" }}
             className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors cursor-pointer"
           >
             Home
@@ -35,7 +35,7 @@ const Navbar = () => {
             ) : (
               <Link key={i} href={item.url}>
                 <div
-                  className="hover:text-white focus:text-white text-md font-semibold font-mulish text-slate-300/70 transition-colors"
+                  className="hover:text-white focus:text-white text-sm font-semibold font-mulish text-slate-300/70 transition-colors"
                   translate="no"
                 >
                   {item.text}
@@ -54,7 +54,7 @@ const Navbar = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </header>
   );
 };
 

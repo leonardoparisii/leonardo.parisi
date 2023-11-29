@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
         <div className="flex flex-col w-full">
           <Navbar />
-          <div className="py-8 sm:py-20">{children}</div>
+          <div className="py-8 sm:py-20 mt-24">{children}</div>
         </div>
         <Footer />
       </body>
