@@ -5,8 +5,8 @@ import { TextProps } from "@/types/index";
 export default function Text({ text, secondaryText, customStyle }: TextProps) {
   return (
     <div
-      className={`${
-        customStyle ? customStyle : "font-bold text-xl text-slate-500"
+      className={`cursor-default ${
+        customStyle ? customStyle : "font-semibold text-[17px] text-dark"
       } font-mulish`}
     >
       {text} <br />

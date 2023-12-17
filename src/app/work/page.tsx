@@ -4,16 +4,8 @@ import Title from "@/components/ui/Title";
 import data from "@/data/data.json";
 import Image from "next/image";
 import Link from "next/link";
-import { useSpring, animated } from "@react-spring/web";
 
 const Work = () => {
-  const animation = useSpring({
-    from: { opacity: 0, transform: "translateY(50px)" },
-    to: { opacity: 1, transform: "translateY(0)" },
-    delay: 1250,
-    config: { duration: 800 },
-  });
-
   const text = (
     <p>
       Hi, here you can find a list of the projects I've worked on, <br /> each
@@ -24,7 +16,7 @@ const Work = () => {
       <Link
         target="__blank"
         href="https://github.com/leonardoparisii"
-        className="text-white font-semibold font-mulish underline cursor-pointer"
+        className="text-orange font-bold font-mulish underline cursor-pointer"
       >
         here
       </Link>
@@ -35,54 +27,44 @@ const Work = () => {
     <div className="flex w-full justify-start items-start xl:-mt-6 px-6 sm:px-24 md:px-36">
       <div className="flex flex-col gap-6 w-full">
         <div className="flex flex-col gap-2">
-          <animated.div
-            style={useSpring({
-              from: { opacity: 0, transform: "translateY(40px)" },
-              to: { opacity: 1, transform: "translateY(0)" },
-              delay: 0,
-              config: { duration: 550 },
-            })}
-          >
+          <div>
             <Title
               title="Projects and work experience."
-              customStyle="text-4xl md:text-5xl font-source font-semibold"
+              customStyle="text-4xl md:text-5xl font-source font-semibold text-dark mb-3"
             />
-          </animated.div>
-          <animated.div
-            style={useSpring({
-              from: { opacity: 0, transform: "translateY(40px)" },
-              to: { opacity: 1, transform: "translateY(0)" },
-              delay: 600,
-              config: { duration: 550 },
-            })}
-          >
+          </div>
+          <div>
             <Text text={text} />
-          </animated.div>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.projects.map((item: any) => (
-            <animated.div
-              style={animation}
+            <Link
+              href={item.url}
               key={item.text}
-              className="flex gap-4 items-center text-lg text-white font-mulish font-semibold cursor-pointer"
+              className="flex gap-4 w-fit items-center text-lg text-dark font-mulish font-semibold cursor-pointer"
+              target="__blank"
             >
-              <Link href={item.url} className="rounded-xl" target="__blank">
+              <div className="rounded-xl relative">
+                <div
+                  className={`absolute top-0 -left-2 w-3 h-3 rounded-full ${item.status} `}
+                />
                 <Image
                   alt="image"
                   src={item.image}
                   width={50}
                   height={50}
-                  className="rounded-xl select-none"
+                  className="rounded-full select-none"
                   draggable="false"
                 />
-              </Link>
-              <div className="flex flex-col h-full w-fit">
+              </div>
+              <div className="flex flex-col h-full w-fit font-bold">
                 {item.title}
-                <span className="text-base font-bold text-slate-500">
+                <span className="text-sm font-semibold text-dark">
                   {item.text}
                 </span>
               </div>
-            </animated.div>
+            </Link>
           ))}
         </div>
       </div>

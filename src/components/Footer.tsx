@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="w-fit flex items-center">
         <Text
           text="Copyright © 2023. All rights reserved"
-          customStyle="text-sm sm:text-md font-semibold text-slate-500"
+          customStyle="text-sm sm:text-md font-bold text-dark"
         />
       </div>
-      <div className="w-fit flex justify-end sm:p-5 gap-4">
+      <div className="w-fit flex justify-end gap-4">
         {socialsData.socials.map((social) => (
           <Link key={social.name} href={social.url} target="_blank">
-            <div className="text-lg text-slate-400 hover:text-slate-700 transition-colors">
+            <div className="text-lg text-dark hover:text-orange transition-all duration-500">
               <i className={`bi bi-${social.icon}`}></i>
             </div>
           </Link>

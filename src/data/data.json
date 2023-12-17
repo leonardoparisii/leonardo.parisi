@@ -27,16 +27,25 @@
   ],
   "projects": [
     {
-      "title": "Curve",
-      "text": "Frontend developer",
-      "image": "/curve_logo.png",
-      "url": "https://curve.rip"
+      "title": "Craydia",
+      "text": "Software developer",
+      "image": "/craydia_logo.svg",
+      "url": "https://craydia.com",
+      "status": "bg-yellow-600"
     },
     {
       "title": "Topgames shop",
       "text": "Frontend developer",
       "image": "/Topgames-shop.png",
-      "url": "https://topgames-shop.com"
+      "url": "https://topgames-shop.com",
+      "status": "bg-green-700"
+    },
+    {
+      "title": "Curve",
+      "text": "Frontend developer",
+      "image": "/curve_logo.png",
+      "url": "https://curve.rip",
+      "status": "bg-red-600"
     }
   ]
 }

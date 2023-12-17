@@ -1,7 +1,6 @@
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import "@/styles/global.css";
 import type { Metadata } from "next";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -42,10 +41,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
-        <div className="flex flex-col w-full">
-          <Navbar />
-          <div className="py-8 sm:py-20 mt-24">{children}</div>
-        </div>
+        <Header />
+        <div className="py-8 sm:py-20 mt-36 w-full">{children}</div>
         <Footer />
       </body>
     </html>

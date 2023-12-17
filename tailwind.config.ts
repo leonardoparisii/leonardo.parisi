@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        dark: "#101010",
+        orange: "#F16529",
+      },
       keyframes: {
         border: {
           "0%, 100%": { borderRadius: "50% 45% 40% 70%/60% 30% 70% 40%" },
@@ -15,17 +19,17 @@ const config: Config = {
         },
       },
       animation: {
-        "border": "border 8s ease-in-out infinite",
+        border: "border 8s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "source": "Source Serif Pro",
-        "satoshi": "Satoshi",
-        "mulish": "Mulish"
-      }
+        satoshi: "Satoshi",
+        mulish: "Mulish",
+      },
     },
   },
   plugins: [],
