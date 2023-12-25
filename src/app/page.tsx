@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import ProfileImage from "../../public/ProfileImage.png";
 import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import { TechData } from "@/data/techstackData.js";
@@ -21,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-24 max-md:gap-12 h-full">
           <div>
             <Image
-              src={ProfileImage}
+              src="/ProfileImage.png"
               alt="ProfileImage"
               className="border-[1.5px] border-solid border-dark relative bg-no-repeat bg-cover animate-border"
               width={325}
@@ -49,7 +48,7 @@ export default function Home() {
           <div className="flex flex-row gap-6 items-center justify-center mt-1">
             {TechData.map((item) => (
               <div
-                className="text-[26px] text-dark hover:text-orange/90 transition-all duration-500 cursor-pointer h-fit w-fit"
+                className="text-[26px] text-[#151515] hover:text-orange/90 transition-all duration-500 cursor-pointer h-fit w-fit"
                 key={item.name}
               >
                 {item.icon}
