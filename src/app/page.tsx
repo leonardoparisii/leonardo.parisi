@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Title from "@/components/ui/Title";
 import Text from "@/components/ui/Text";
 import { TechData } from "@/data/techstackData.js";
 import Contact from "@/components/Contacts";
@@ -29,7 +28,9 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col w-full gap-6 items-start my-auto">
-            <Title title="Hi, I'm Leonardo!" />
+            <div className="lg:text-[64px] text-5xl max-md:text-[38px] font-medium font-satoshi text-[#151515]">
+              Hi, I'm <span className="text-orange">Leonardo</span>!
+            </div>
             <Text
               text="I'm Leonardo Parisi."
               secondaryText={secondaryText}

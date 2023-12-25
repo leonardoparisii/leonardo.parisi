@@ -9,7 +9,7 @@ export default function Title({ title, customStyle }: TitleProps) {
         customStyle
           ? customStyle
           : "lg:text-7xl text-5xl max-md:text-[38px] font-medium text-dark"
-      } font-source `}
+      } font-satoshi `}
     >
       {title}
     </div>
