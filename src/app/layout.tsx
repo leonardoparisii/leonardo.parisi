@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "@/styles/global.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Hi, I'm Leonardo",
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         <div className="py-8 sm:py-20 mt-36 w-full">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
