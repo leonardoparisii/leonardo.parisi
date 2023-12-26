@@ -28,7 +28,7 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col w-full gap-6 items-start my-auto">
-            <div className="lg:text-[64px] text-5xl max-md:text-[38px] font-medium font-satoshi text-[#151515]">
+            <div className="lg:text-7xl text-5xl max-md:text-[38px] font-medium font-satoshi text-[#151515]">
               Hi, I'm <span className="text-orange">Leonardo</span>!
             </div>
             <Text
