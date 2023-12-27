@@ -43,7 +43,7 @@ const Header = () => {
         {!home && (
           <Link
             href={{ pathname: "/" }}
-            className="text-dark hover:text-orange focus:text-orange transition-all duration-500 text-xs font-bold font-mulish cursor-pointer"
+            className="text-dark hover:text-orange focus:text-orange transition-all duration-500 text-sm font-bold font-mulish cursor-pointer"
           >
             Home
           </Link>
