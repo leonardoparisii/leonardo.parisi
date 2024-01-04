@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed transition-all duration-300 w-full px-12 box-border flex items-center justify-center bg-[#dedede]/90 z-50 ${
+      className={`fixed transition-all duration-300 w-full px-12 box-border flex items-center justify-center bg-[#f0f0f0]/90 z-50 ${
         scroll > 10 ? "py-5 border-dark/0" : "py-6 border border-dark/30"
       }`}
     >

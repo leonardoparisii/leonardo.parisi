@@ -22,13 +22,13 @@ export default function Home() {
               src="/ProfileImage.png"
               alt="ProfileImage"
               className="border-[1.5px] border-solid border-dark relative bg-no-repeat bg-cover animate-border"
-              width={325}
-              height={325}
+              width={300}
+              height={300}
               draggable={false}
             />
           </div>
           <div className="flex flex-col w-full gap-6 items-start my-auto">
-            <div className="lg:text-7xl text-5xl max-md:text-[38px] font-medium font-satoshi text-[#151515]">
+            <div className="lg:text-7xl text-5xl max-md:text-[38px] sm:font-medium font-semibold font-satoshi text-[#151515]">
               Hi, I'm <span className="text-orange">Leonardo</span>!
             </div>
             <Text
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="flex flex-row gap-6 items-center justify-center mt-1">
             {TechData.map((item) => (
               <div
-                className="text-[26px] text-[#151515] hover:text-orange/90 transition-all duration-500 cursor-pointer h-fit w-fit"
+                className="sm:text-[26px] text-[22px] text-[#151515] hover:text-orange/90 transition-all duration-500 cursor-pointer h-fit w-fit"
                 key={item.name}
               >
                 {item.icon}
