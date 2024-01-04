@@ -65,7 +65,7 @@ const Header = () => {
           </>
         ))}
       </div>
-      <div className="w-full flex justify-end gap-4">
+      <div className="w-fit flex justify-end gap-4">
         {socialsData.socials.map((social) => (
           <Link key={social.name} href={social.url} target="_blank">
             <div className="text-lg text-dark hover:text-orange focus:text-orange transition-all duration-500">
