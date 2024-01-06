@@ -35,13 +35,13 @@ const Contact = () => {
           <Text text={text} />
         </div>
       </div>
-      <div className="flex flex-col" id="contacts">
+      <div className="flex flex-col">
         <div className="flex flex-col">
           <Text
             text="Email"
             customStyle="font-semibold font-mulish text-dark"
           />
-          <Text text={email} />
+          <Text text={email} id="contacts" />
         </div>
       </div>
     </div>
