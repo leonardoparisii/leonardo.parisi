@@ -41,7 +41,7 @@ const Contact = () => {
             text="Email"
             customStyle="font-semibold font-mulish text-dark"
           />
-          <Text text={email} id="contacts" />
+          <Text text={email} />
         </div>
       </div>
     </div>

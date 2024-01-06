@@ -28,7 +28,7 @@ const About = () => {
   );
 
   return (
-    <div className="flex flex-col gap-2 w-full">
+    <div className="flex flex-col gap-2 w-full" id="contact">
       <div>
         <Title
           title="About."

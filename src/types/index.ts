@@ -4,7 +4,6 @@ export interface TextProps {
   text: string | any;
   secondaryText?: string | any;
   customStyle?: string;
-  id?: string;
 }
 
 export interface TitleProps {
