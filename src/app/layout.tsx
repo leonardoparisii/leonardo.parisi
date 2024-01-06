@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title,
   description:
     "I'm Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+  other: {
+    image: "https://leonardoparisi.site/images/preview.png",
+  },
   authors: [
     {
       name: author,
@@ -35,6 +38,12 @@ export const metadata: Metadata = {
     siteName: "leonardo Parisi portfolio",
     type: "website",
     url,
+    images: [
+      {
+        url: "https://leonardoparisi.site/images/preview.png",
+        alt: "leonardoparisi",
+      },
+    ],
   },
   twitter: {
     title,
