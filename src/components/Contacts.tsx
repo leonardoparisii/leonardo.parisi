@@ -35,7 +35,7 @@ const Contact = () => {
           <Text text={text} />
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col" id="contact">
         <div className="flex flex-col">
           <Text
             text="Email"
