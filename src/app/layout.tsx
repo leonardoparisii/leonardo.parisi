@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
-const url = new URL("https://leonardoparisi.rip");
+const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
 const author = "LeonardoParisi <parisileonardo15@gmail.com>";
 

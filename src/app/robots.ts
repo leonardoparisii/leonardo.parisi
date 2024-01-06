@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://leonardoparisi.rip/sitemap.xml",
+    sitemap: "https://leonardoparisi.site/sitemap.xml",
   };
 }
