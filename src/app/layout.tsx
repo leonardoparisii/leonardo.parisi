@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
-const author = "LeonardoParisi <parisileonardo15@gmail.com>";
+const author = "Leonardo Parisi <parisileonardo15@gmail.com>";
 
 export const metadata: Metadata = {
   title,
@@ -32,16 +32,17 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
+    type: "website",
+    locale: "it_IT",
     title,
     description:
       "I'm Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
     siteName: "leonardo Parisi portfolio",
-    type: "website",
     url,
     images: [
       {
         url: "https://leonardoparisi.site/images/preview.png",
-        alt: "leonardoparisi",
+        alt: "Leonardo Parisi",
       },
     ],
   },
