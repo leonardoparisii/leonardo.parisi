@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
@@ -68,6 +69,7 @@ export default function RootLayout({
         <div className="py-8 sm:py-20 mt-36 w-full">{children}</div>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
