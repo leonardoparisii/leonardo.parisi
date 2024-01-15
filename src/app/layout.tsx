@@ -8,11 +8,21 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
 const author = "Leonardo Parisi <parisileonardo15@gmail.com>";
+const today = new Date();
+const birthDate = new Date("2007-02-15");
+const age =
+  today.getFullYear() -
+  birthDate.getFullYear() -
+  (today.getMonth() < birthDate.getMonth() ||
+  (today.getMonth() === birthDate.getMonth() &&
+    today.getDate() < birthDate.getDate())
+    ? 1
+    : 0);
+const ageDescription = `I'm Leonardo Parisi. A ${age}-year-old junior frontend developer.`;
 
 export const metadata: Metadata = {
   title,
-  description:
-    "I'm Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+  description: ageDescription,
   other: {
     image: "https://leonardoparisi.site/images/preview.png",
   },
@@ -36,8 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "it_IT",
     title,
-    description:
-      "I'm Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+    description: ageDescription,
     siteName: "leonardo Parisi portfolio",
     url,
     images: [
@@ -49,8 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title,
-    description:
-      "I'm Leonardo Parisi. A 16-year-old junior frontend developer based in Italy.",
+    description: ageDescription,
     site: "@_leoparisi",
     creator: "@_leoparisi",
     card: "summary",
