@@ -30,17 +30,14 @@ const Contact = () => {
         <div>
           <Title
             title="Contacts."
-            customStyle="font-semibold text-[40px] text-dark font-mulish mb-3"
+            className="font-semibold text-[40px] text-dark font-mulish mb-3"
           />
           <Text text={text} />
         </div>
       </div>
-      <div className="flex flex-col" id="contact">
+      <div className="flex flex-col">
         <div className="flex flex-col">
-          <Text
-            text="Email"
-            customStyle="font-semibold font-mulish text-dark"
-          />
+          <Text text="Email" className="font-semibold font-mulish text-dark" />
           <Text text={email} />
         </div>
       </div>

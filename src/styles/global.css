@@ -1,25 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap");
 @import url("https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url("https://fonts.cdnfonts.com/css/source-serif-4");
+@import url("https://fonts.cdnfonts.com/css/source-serif-pro");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  scroll-behavior: smooth;
   scrollbar-gutter: stable;
 }
 
 body {
-  background: #f0f0f0;
-  color: #f8fafc;
+  background: #d8cfc4;
+  color: #d8cfc4;
   min-height: 100vh;
   position: relative;
 }
 
 html::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -29,6 +34,12 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background: #202020;
+}
+
+.animated-text {
+  transform: translateY(115px);
+  width: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .text-dark {

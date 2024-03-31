@@ -1,9 +1,8 @@
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 import "@/styles/global.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Toaster } from "sonner";
 
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
@@ -34,10 +33,6 @@ export const metadata: Metadata = {
   ],
   creator: author,
   publisher: author,
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
   robots: {
     index: true,
     follow: true,
@@ -49,12 +44,6 @@ export const metadata: Metadata = {
     description: ageDescription,
     siteName: "leonardo Parisi portfolio",
     url,
-    images: [
-      {
-        url: "https://leonardoparisi.site/images/preview.png",
-        alt: "Leonardo Parisi",
-      },
-    ],
   },
   twitter: {
     title,
@@ -74,10 +63,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
         <Header />
-        <div className="py-8 sm:py-20 mt-36 w-full">{children}</div>
+        <div className="py-6 sm:py-20 mt-32 w-full">{children}</div>
         <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <Toaster position="bottom-left" />
       </body>
     </html>
   );

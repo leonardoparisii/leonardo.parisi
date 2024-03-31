@@ -32,7 +32,7 @@ const About = () => {
       <div>
         <Title
           title="About."
-          customStyle="font-semibold text-[40px] text-dark font-mulish mb-3"
+          className="font-semibold text-[40px] text-dark font-mulish mb-3"
         />
       </div>
       <div>

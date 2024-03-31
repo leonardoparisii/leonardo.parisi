@@ -17,8 +17,8 @@ const FilterBar = () => {
         <Button
           title="All"
           onClick={() => handleFilterClick("All")}
-          customStyle={
-            filter === "All" ? "bg-white text-black border-slate-500/50" : ""
+          className={
+            filter === "All" ? "bg-light text-black border-slate-500/50" : ""
           }
         />
       </div>
@@ -26,9 +26,9 @@ const FilterBar = () => {
         <Button
           title="Fullstack"
           onClick={() => handleFilterClick("Fullstack")}
-          customStyle={
+          className={
             filter === "Fullstack"
-              ? "bg-white text-black border-slate-500/50"
+              ? "bg-light text-black border-slate-500/50"
               : ""
           }
         />
@@ -37,9 +37,9 @@ const FilterBar = () => {
         <Button
           title="Frontend"
           onClick={() => handleFilterClick("Frontend")}
-          customStyle={
+          className={
             filter === "Frontend"
-              ? "bg-white text-black border-slate-500/50"
+              ? "bg-light text-black border-slate-500/50"
               : ""
           }
         />

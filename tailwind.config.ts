@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         dark: "#101010",
-        orange: "#F16529",
+        light: "#d8cfc4",
+        orange: "#F15529",
       },
       keyframes: {
         border: {
@@ -27,8 +28,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        satoshi: "Satoshi",
+        questrial: "Questrial",
         mulish: "Mulish",
+        source: "Source Serif 4",
       },
     },
   },

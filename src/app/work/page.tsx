@@ -24,13 +24,13 @@ const Work = () => {
     </p>
   );
   return (
-    <div className="flex w-full justify-start items-start xl:-mt-6 px-6 sm:px-24 md:px-36">
+    <div className="flex w-full justify-start items-start xl:-mt-6 px-6 sm:px-14 md:px-20 min-h-[75vh]">
       <div className="flex flex-col gap-6 w-full">
         <div className="flex flex-col gap-2">
           <div>
             <Title
               title="Projects and work experience."
-              customStyle="text-4xl md:text-5xl font-source font-semibold text-dark mb-3"
+              className="text-4xl md:text-5xl font-source font-semibold text-dark mb-3"
             />
           </div>
           <div>
