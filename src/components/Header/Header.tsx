@@ -96,12 +96,12 @@ const Header = () => {
         {/* menu overlay items */}
         <div className="menu-copy">
           <div className="flex flex-col items-center gap-6 menu-links">
-            {menuLinks.map((link, index) => (
-              <div className="relative">
+            {menuLinks.map((link, i) => (
+              <div className="relative" key={i}>
                 {path == link.path && (
                   <div className="absolute top-[40%] -left-14 h-6 w-6 rounded-full bg-light z-50" />
                 )}
-                <div key={index} className="menu-link-item ">
+                <div className="menu-link-item ">
                   <div
                     className="relative menu-link-item-holder"
                     onClick={toggleMenu}

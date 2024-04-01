@@ -5,9 +5,19 @@ import { TechData } from "@/data/techstackData.js";
 import Contact from "@/components/Contacts";
 import About from "@/components/About";
 import { useEffect, useRef, useState } from "react";
-import Intro from "@/components/Intro/intro";
 import Lenis from "@studio-freight/lenis";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Intro from "@/components/Intro/intro";
+
+function raf(time: any, lenis: Lenis) {
+  lenis.raf(time * 0.5);
+  requestAnimationFrame(() => raf(time, lenis));
+}
+
+if (typeof window !== "undefined") {
+  const lenis = new Lenis();
+  requestAnimationFrame(() => raf(0, lenis));
+}
 
 export default function Home() {
   const ref = useRef(null);
@@ -36,32 +46,20 @@ export default function Home() {
     </p>
   );
 
-  const lenis = new Lenis();
-
-  lenis.on("scroll", (e: any) => {
-    console.log(e);
-  });
-
-  function raf(time: any) {
-    lenis.raf(time * 0.5);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
   return (
     <div className={`flex w-full justify-center items-start`}>
       <div className="fixed bottom-8 left-8 bg-dark/70 rounded-lg h-14 w-60 font-mulish text-[15px] text-light p-4 flex gap-2 items-center select-none">
         <i className="bi bi-exclamation-circle"></i>
         New site coming soon.
       </div>
-      {/* <AnimatePresence mode="wait">{isLoading && <Intro />}</AnimatePresence> */}
+      <AnimatePresence mode="wait">{isLoading && <Intro />}</AnimatePresence>
       <div className="flex flex-col justify-center items-center gap-24 max-md:gap-16 lg:px-0 px-6 sm:px-24">
         <div className="flex flex-col md:flex-row items-center justify-center gap-24 max-md:gap-12 h-full">
           <div>
             <Image
               src="/ProfileImage.png"
-              alt="ProfileImage"
               className="border-[1.5px] border-solid border-dark relative bg-no-repeat bg-cover animate-border"
+              alt="image"
               width={300}
               height={300}
               draggable={false}
