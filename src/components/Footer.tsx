@@ -5,6 +5,9 @@ import Text from "./ui/Text";
 import Button from "./ui/Button";
 
 const Footer = () => {
+  const dynamicCopyright = (
+    <div>© {new Date().getFullYear()}. Created by Leonardo Parisi</div>
+  );
   return (
     <div className="flex flex-col gap-8 justify-between md:px-16 px-6 md:py-16 py-10 w-full mt-18 bg-dark">
       <div className=" flex flex-col gap-8 w-full">
@@ -22,7 +25,7 @@ const Footer = () => {
       </div>
       <div className="flex justify-between">
         <Text
-          text="Copyright © 2023. All rights reserved"
+          text={dynamicCopyright}
           className="text-sm sm:text-md font-bold text-light"
         />
         <div className="w-fit flex justify-end items-end gap-4">

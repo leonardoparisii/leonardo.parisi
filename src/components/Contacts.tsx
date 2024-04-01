@@ -10,7 +10,7 @@ const Contact = () => {
       <Link
         target="__blank"
         href="https://discord.com/users/657671413947301959"
-        className="text-orange font-semibold font-mulish underline cursor-pointer"
+        className="text-orange font-semibold font-mulish underline  "
       >
         Discord
       </Link>{" "}
@@ -19,8 +19,8 @@ const Contact = () => {
   );
 
   const email = (
-    <p className="text-dark text-md font-bold font-mulish underline cursor-pointer">
-      parisileonardo15@gmail.com
+    <p className="text-dark text-md font-bold font-mulish underline  ">
+      parisii.leonardo@gmail.com
     </p>
   );
 
@@ -38,7 +38,9 @@ const Contact = () => {
       <div className="flex flex-col">
         <div className="flex flex-col">
           <Text text="Email" className="font-semibold font-mulish text-dark" />
-          <Text text={email} />
+          <Link href="mailto:parisii.leonardo@gmail.com" target="__blank">
+            <Text text={email} />
+          </Link>
         </div>
       </div>
     </div>

@@ -77,7 +77,7 @@ const Header = () => {
         {!home && (
           <Link
             href={{ pathname: "/" }}
-            className={`text-dark hover:text-orange focus:text-orange transition-all duration-500 text-sm font-bold font-mulish cursor-pointer`}
+            className={`text-dark hover:text-orange focus:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
           >
             Home
           </Link>
@@ -85,7 +85,7 @@ const Header = () => {
       </div>
       <div className="w-full max-md:w-fit flex justify-end gap-4">
         <button
-          className={`hamburger cursor-pointer ${isActive && "active"}`}
+          className={`hamburger   ${isActive && "active"}`}
           onClick={toggleMenu}
         ></button>
       </div>
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
         {/* menu overlay items */}
         <div className="menu-copy">
-          <div className="flex flex-col items-center gap-6 menu-links">
+          <div className="flex flex-col items-center gap-6 menu-links select-none">
             {menuLinks.map((link, i) => (
               <div className="relative" key={i}>
                 {path == link.path && (
@@ -118,7 +118,7 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="flex w-full md:gap-6 gap-20 text-light text-base font-medium">
+          <div className="flex w-full md:gap-6 gap-20 text-light text-base font-medium select-none">
             <div className="flex flex-col w-fit">
               <p className="text-3xl">Leonardo Parisi</p>
               <Link href="mailto:parisii.leonardo@gmail.com" target="_top">

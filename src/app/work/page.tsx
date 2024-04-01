@@ -16,7 +16,7 @@ const Work = () => {
       <Link
         target="__blank"
         href="https://github.com/leonardoparisii"
-        className="text-orange font-bold font-mulish underline cursor-pointer"
+        className="text-orange font-bold font-mulish underline  "
       >
         here
       </Link>
@@ -42,7 +42,7 @@ const Work = () => {
             <Link
               href={item.url}
               key={item.text}
-              className="flex gap-4 w-fit items-center text-lg text-dark font-mulish font-semibold cursor-pointer"
+              className="flex gap-4 w-fit items-center text-lg text-dark font-mulish font-semibold  "
               target="__blank"
             >
               <div className="rounded-xl relative">

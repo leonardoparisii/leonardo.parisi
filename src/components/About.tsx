@@ -19,7 +19,7 @@ const About = () => {
       <Link
         target="__blank"
         href="https://read.cv/leonardoparisi"
-        className="text-orange font-semibold font-mulish underline cursor-pointer"
+        className="text-orange font-semibold font-mulish underline  "
       >
         read.cv/leonardoparisi
       </Link>
