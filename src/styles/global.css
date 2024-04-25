@@ -24,6 +24,11 @@ body {
   position: relative;
 }
 
+::selection {
+  background: #be613f;
+  color: #101010;
+}
+
 html::-webkit-scrollbar {
   width: 0px;
 }
