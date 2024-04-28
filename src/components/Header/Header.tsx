@@ -77,14 +77,14 @@ const Header = () => {
         {!home ? (
           <Link
             href={{ pathname: "/" }}
-            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
+            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-questrial  `}
           >
             Home
           </Link>
         ) : (
           <Link
             href={{ pathname: "/about" }}
-            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
+            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-questrial  `}
           >
             About
           </Link>

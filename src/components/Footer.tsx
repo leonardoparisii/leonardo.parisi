@@ -9,14 +9,14 @@ const Footer = () => {
     <div>© {new Date().getFullYear()}. Created by Leonardo Parisi</div>
   );
   return (
-    <div className="flex justify-center items-center px-4 py-4 w-full">
-      <div className="flex flex-col gap-8 justify-between md:px-16 px-6 md:py-16 py-10 w-full mt-18 bg-dark rounded-[28px]">
+    <div className="flex justify-center items-center sm:p-4 p-3 w-full">
+      <div className="flex flex-col gap-8 justify-between md:px-16 px-6 md:py-16 py-10 w-full mt-18 bg-dark sm:rounded-[28px] rounded-lg">
         <div className=" flex flex-col gap-8 w-full">
           <Text
             text="Leonardo Parisi"
-            className="text-4xl font-black text-light font-source"
+            className="md:text-4xl text-3xl font-black text-light font-source"
           />
-          <div className="border-b border-light md:w-[500px] w-full font-satoshi md:text-xl sm:text-base text-sm py-2 font-medium flex items-center justify-between text-light">
+          <div className="border-b border-light md:w-[500px] w-full font-questrial md:text-xl sm:text-base text-sm py-2 font-medium flex items-center justify-between text-light">
             parisii.leonardo@gmail.com
             <Button
               title="Get in touch!"
@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <Text
             text={dynamicCopyright}
             className="text-sm sm:text-md font-bold text-light"

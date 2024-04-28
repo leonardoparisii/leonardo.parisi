@@ -3,7 +3,7 @@ import "@/styles/global.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { Toaster } from "sonner";
-import AnimatedCursor from "react-animated-cursor";
+
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
 const author = "Leonardo Parisi <parisii.leonardo@gmail.com>";
@@ -63,22 +63,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
         <Header />
-        <div className="w-full">
-          <AnimatedCursor
-            innerSize={36}
-            innerStyle={{
-              border: "2px solid #6b6253",
-              background: "transparent",
-            }}
-            outerStyle={{ background: "#6b625320" }}
-            outerSize={26}
-            color="255, 255, 255"
-            outerAlpha={1}
-            innerScale={0.05}
-            outerScale={2}
-          />
-          {children}
-        </div>
+        <div className="w-full">{children}</div>
         <Footer />
         <Toaster position="bottom-left" />
       </body>

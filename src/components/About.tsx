@@ -19,7 +19,7 @@ const About = () => {
       <Link
         target="__blank"
         href="https://read.cv/leonardoparisi"
-        className="text-orange font-semibold font-mulish underline  "
+        className="text-orange font-semibold font-questrial underline  "
       >
         read.cv/leonardoparisi
       </Link>
@@ -32,7 +32,7 @@ const About = () => {
       <div>
         <Title
           text="About."
-          className="font-semibold text-[40px] text-dark font-mulish mb-3"
+          className="font-semibold text-[40px] text-dark font-questrial mb-3"
         />
       </div>
       <div>

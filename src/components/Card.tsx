@@ -101,7 +101,7 @@ const Card = ({
             <Button
               key={i}
               title={item}
-              className="rounded-full py-1.5 px-3 bg-dark text-neutral-300 font-normal max-xs:font-light font-questrial md:text-base text-[15px] max-xs:text-sm"
+              className="rounded-full py-1.5 px-3 bg-dark text-neutral-300 font-light font-questrial md:text-base text-[15px] max-xs:text-sm"
             ></Button>
           ))}
         </div>

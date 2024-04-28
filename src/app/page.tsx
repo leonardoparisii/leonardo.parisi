@@ -4,8 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Contact from "@/components/Contacts";
 import Work from "@/components/Work";
 import Intro from "@/components/Intro/intro";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const today = new Date();
   const birthDate = new Date("2007-02-15");
@@ -37,9 +39,36 @@ export default function Home() {
     })();
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className={`flex w-full justify-center items-start`}>
-      <div className="fixed bottom-8 left-8 bg-dark/70 rounded-lg h-14 w-72 font-mulish text-[15px] text-light p-4 flex gap-2 items-center select-none text-nowrap">
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={36}
+          innerStyle={{
+            border: "2px solid #6b6253",
+            background: "transparent",
+          }}
+          outerStyle={{ background: "#6b625320" }}
+          outerSize={26}
+          color="255, 255, 255"
+          outerAlpha={1}
+          innerScale={0.05}
+          outerScale={2}
+        />
+      )}
+      <div className="fixed bottom-8 left-8 bg-dark/70 rounded-lg h-14 w-72 font-questrial text-[15px] text-light p-4 flex gap-2 items-center select-none text-nowrap">
         <i className="bi bi-exclamation-circle"></i>
         site currently under construction.
       </div>

@@ -7,7 +7,7 @@ export default function Text({ text, secondaryText, className }: TextProps) {
     <div
       className={`${
         className ? className : "font-semibold text-[17px] text-dark"
-      } font-mulish`}
+      } font-questrial h-fit`}
     >
       {text} <br />
       {secondaryText}

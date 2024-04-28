@@ -30,7 +30,6 @@ const config: Config = {
       fontFamily: {
         source: ["Source Serif Pro", "serif"],
         questrial: "Questrial",
-        mulish: "Mulish",
       },
       screens: {
         xxs: "360px",
