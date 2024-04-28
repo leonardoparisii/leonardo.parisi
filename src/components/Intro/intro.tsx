@@ -34,11 +34,11 @@ export default function Intro() {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 1, ease: [0.23, 1.46, 0.14, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 2, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 2, ease: [0.76, 1.23, 0.24, 1] },
     },
   };
 
