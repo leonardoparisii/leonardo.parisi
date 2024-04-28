@@ -10,7 +10,7 @@ import { TfiClose } from "react-icons/tfi";
 
 const menuLinks = [
   { path: "/", label: "Home" },
-  { path: "/work", label: "Work" },
+  { path: "#work", label: "Work" },
   { path: "#about", label: "About" },
   { path: "#contact", label: "Contact" },
 ];
@@ -74,18 +74,25 @@ const Header = () => {
         </div>
       </div>
       <div className="md:flex justify-center gap-4 md:rounded-none rounded-full md:border-none border relative hidden md:w-full">
-        {!home && (
+        {!home ? (
           <Link
             href={{ pathname: "/" }}
-            className={`text-dark hover:text-orange focus:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
+            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
           >
             Home
+          </Link>
+        ) : (
+          <Link
+            href={{ pathname: "/about" }}
+            className={`text-dark hover:text-orange transition-all duration-500 text-sm font-bold font-mulish  `}
+          >
+            About
           </Link>
         )}
       </div>
       <div className="w-full max-md:w-fit flex justify-end gap-4">
         <button
-          className={`hamburger   ${isActive && "active"}`}
+          className={`hamburger ${isActive && "active"}`}
           onClick={toggleMenu}
         ></button>
       </div>
@@ -101,7 +108,7 @@ const Header = () => {
                 {path == link.path && (
                   <div className="absolute top-[40%] -left-14 h-6 w-6 rounded-full bg-light z-50" />
                 )}
-                <div className="menu-link-item ">
+                <div className="menu-link-item">
                   <div
                     className="relative menu-link-item-holder"
                     onClick={toggleMenu}

@@ -7,8 +7,8 @@ export default function Button({ title, className, ...props }: ButtonProps) {
     <button
       {...props}
       className={classNames(
-        "transition-all w-fit py-2 px-3.5   rounded-lg text-base text-black font-semibold",
-        className
+        className,
+        "transition-all w-fit py-2 px-3.5 text-base text-black font-semibold"
       )}
     >
       {title}

@@ -1,13 +1,9 @@
 "use client";
-import Image from "next/image";
-import Text from "@/components/ui/Text";
-import { TechData } from "@/data/techstackData.js";
-import Contact from "@/components/Contacts";
-import About from "@/components/About";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Contact from "@/components/Contacts";
+import Work from "@/components/Work";
 import Intro from "@/components/Intro/intro";
-import Link from "next/link";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,65 +33,183 @@ export default function Home() {
       setTimeout(() => {
         setIsLoading(false);
         window.scrollTo(0, 0);
-      }, 3000);
+      }, 1000);
     })();
   }, []);
 
   return (
     <div className={`flex w-full justify-center items-start`}>
-      <div className="fixed bottom-8 left-8 bg-dark/70 rounded-lg h-14 w-60 font-mulish text-[15px] text-light p-4 flex gap-2 items-center select-none">
+      <div className="fixed bottom-8 left-8 bg-dark/70 rounded-lg h-14 w-72 font-mulish text-[15px] text-light p-4 flex gap-2 items-center select-none text-nowrap">
         <i className="bi bi-exclamation-circle"></i>
-        New site coming soon.
+        site currently under construction.
       </div>
-      {/* <AnimatePresence mode="wait">{isLoading && <Intro />}</AnimatePresence> */}
-      <div className="flex flex-col justify-center items-center gap-24 max-md:gap-16 lg:px-0 px-6 sm:px-24 select-none">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-24 max-md:gap-12 h-full">
-          <div>
-            <Image
-              src="/ProfileImage.png"
-              className="border-[1.5px] border-solid border-dark relative bg-no-repeat bg-cover animate-border"
-              alt="image"
-              width={300}
-              height={300}
-              draggable={false}
-              data-scroll
-              data-scroll-speed="0.1"
-            />
-          </div>
-          <div className="flex flex-col w-full gap-6 items-start my-auto">
-            <motion.div className="lg:text-7xl text-5xl max-md:text-[38px] sm:font-medium font-semibold font-satoshi text-dark">
-              Hi, I'm <span className="text-orange">Leonardo</span>!
-            </motion.div>
-            <Text
-              text="I'm Leonardo Parisi."
-              secondaryText={secondaryText}
-              className="max-sm:w-full max-md:text-center text-dark font-semibold"
-            />
-          </div>
-        </div>
-        <div className="flex gap-12" id="stack">
-          <div className="flex-row gap-12 items-center hidden md:flex">
-            <Text
-              text="TECH STACK"
-              className="font-extrabold text-xl text-dark mt-1 font-satoshi"
-            />
-            <Text text="|" className="font-semibold text-2xl text-dark" />
-          </div>
-          <div className="flex flex-row gap-6 items-center justify-center mt-1">
-            {TechData.map((item) => (
-              <Link
-                href="/"
-                className="sm:text-[26px] text-[22px] text-dark hover:text-orange transition-all duration-500 h-fit w-fit"
-                key={item.name}
+      <AnimatePresence mode="wait">{isLoading && <Intro />}</AnimatePresence>
+      <div className="flex flex-col justify-center items-center select-none">
+        <div className="h-screen w-screen 2xl:text-[126px] xl:text-[118px] lg:text-8xl md:text-[78px] text-6xl max-xs:text-[54px] font-source sm:pt-64 pt-56">
+          <div className="relative flex flex-col items-center justify-center w-full">
+            <div className="w-fit">
+              <div className="relative">
+                <div
+                  className="-top-12 left-2 absolute"
+                  style={{
+                    clipPath: "inset(0% 0% 0% 0%)",
+                  }}
+                >
+                  <motion.div
+                    className="relative text-[38px]"
+                    initial={{
+                      transform: "translateY(60px)",
+                    }}
+                    animate={{
+                      transform: "translateY(0px)",
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 25,
+                      duration: 0.75,
+                      delay: 2.5,
+                    }}
+                  >
+                    <div className="font-source max-lg:text-3xl max-sm:text-[26px]">
+                      Hi, I’m Leonardo Parisi
+                    </div>
+                  </motion.div>
+                </div>
+                <div
+                  style={{
+                    clipPath: "inset(0% 0% -20% 0%)",
+                  }}
+                >
+                  <motion.div
+                    className="relative"
+                    initial={{
+                      transform: "translateY(160px)",
+                    }}
+                    animate={{
+                      transform: "translateY(0px)",
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 25,
+                      duration: 0.75,
+                      delay: 3.25,
+                    }}
+                  >
+                    <div className="font-source flex max-sm:flex-col gap-4">
+                      Front-end <div className="max-sm:hidden">Developer</div>
+                    </div>
+                  </motion.div>
+                </div>
+                <div
+                  style={{
+                    clipPath: "inset(0% 0% -20% 0%)",
+                  }}
+                >
+                  <motion.div
+                    className="relative"
+                    initial={{
+                      transform: "translateY(160px)",
+                    }}
+                    animate={{
+                      transform: "translateY(0px)",
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 25,
+                      duration: 0.75,
+                      delay: 3.75,
+                    }}
+                  >
+                    <div className="w-full hidden justify-end max-sm:flex sm:pl-36 xs:pl-28 xxs:pl-20">
+                      Developer
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+              <div
+                style={{
+                  clipPath: "inset(0% 0% -20% 0%)",
+                }}
               >
-                {item.icon}
-              </Link>
-            ))}
+                <motion.div
+                  className="relative flex sm:justify-end justify-start items-center gap-3"
+                  initial={{
+                    transform: "translateY(160px)",
+                  }}
+                  animate={{
+                    transform: "translateY(0px)",
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 25,
+                    duration: 0.75,
+                    delay: 4.25,
+                  }}
+                >
+                  <div className="flex max-sm:flex-col items-center justify-center gap-4 max-sm:pl-16 xxs:pl-12">
+                    <div className="lg:h-2 h-1 md:w-32 w-20 max-sm:hidden bg-dark font-source"></div>
+                    Based In <div className="max-sm:hidden">Italy.</div>
+                  </div>
+                </motion.div>
+              </div>
+              <div
+                style={{
+                  clipPath: "inset(0% 0% -20% 0%)",
+                }}
+              >
+                <motion.div
+                  className="relative"
+                  initial={{
+                    transform: "translateY(160px)",
+                  }}
+                  animate={{
+                    transform: "translateY(0px)",
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 25,
+                    duration: 0.75,
+                    delay: 3.5,
+                  }}
+                >
+                  <div className="w-full hidden max-sm:flex pl-60 xxs:pl-56">
+                    Italy
+                  </div>
+                </motion.div>
+              </div>
+              <div
+                style={{
+                  width: "100%",
+                  clipPath: "inset(0% 0% 0% 0%)",
+                }}
+              >
+                <motion.div
+                  className="text-3xl w-full flex justify-center mt-28"
+                  initial={{
+                    transform: "translateY(160px)",
+                  }}
+                  animate={{
+                    transform: "translateY(0px)",
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 25,
+                    duration: 0.75,
+                    delay: 4.75,
+                  }}
+                >
+                  <div>Scroll up</div>
+                </motion.div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[15vh] my-[15vh] w-full" id="contact">
+        <div
+          id="work"
+          className="flex flex-col items-center gap-[15vh] md:mt-[40vh] mt-[15vh] md:pt-[30vh] pt-[10vh] mb-[50vh] 2xl:w-[65%] xl:w-[75%] w-full max-xl:px-28 max-md:px-12 max-sm:px-6"
+        >
+          <Work />
           <Contact />
-          <About />
         </div>
       </div>
     </div>

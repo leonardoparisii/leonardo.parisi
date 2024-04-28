@@ -63,7 +63,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="max-w-[2520px] flex-col h-screen flex items-center justify-between mx-auto relative">
         <Header />
-        <div className="py-6 sm:py-20 mt-32 w-full">
+        <div className="w-full">
           <AnimatedCursor
             innerSize={36}
             innerStyle={{
@@ -79,7 +79,6 @@ export default function RootLayout({
           />
           {children}
         </div>
-
         <Footer />
         <Toaster position="bottom-left" />
       </body>

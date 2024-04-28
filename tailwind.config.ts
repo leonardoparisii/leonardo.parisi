@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         dark: "#101010",
-        light: "#d8cfc4",
+        light: "#ECBF8C",
         orange: "#F15529",
       },
       keyframes: {
@@ -28,9 +28,17 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
+        source: ["Source Serif Pro", "serif"],
         questrial: "Questrial",
         mulish: "Mulish",
-        source: "Source Serif 4",
+      },
+      screens: {
+        xxs: "360px",
+        xs: "400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
     },
   },

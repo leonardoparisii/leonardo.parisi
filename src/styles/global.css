@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900;1000&display=swap");
 @import url("https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005,135007,135002,135000");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
-@import url("https://fonts.cdnfonts.com/css/source-serif-4");
 @import url("https://fonts.cdnfonts.com/css/source-serif-pro");
+@import url("https://fonts.cdnfonts.com/css/questrial");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,8 +19,7 @@ body {
 }
 
 body {
-  background: #d8cfc4;
-  color: #d8cfc4;
+  background: #ecbf8c;
   min-height: 100vh;
   position: relative;
 }

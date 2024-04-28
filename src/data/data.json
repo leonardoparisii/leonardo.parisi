@@ -22,30 +22,79 @@
     },
     {
       "text": "Work",
-      "url": "/work"
+      "url": "#work"
     }
   ],
-  "projects": [
-    {
-      "title": "Craydia",
-      "text": "Software developer",
-      "image": "/craydia_logo.svg",
-      "url": "https://craydia.com",
-      "status": "bg-yellow-600"
-    },
-    {
-      "title": "Topgames shop",
-      "text": "Frontend developer",
-      "image": "/Topgames-shop.png",
-      "url": "https://topgames-shop.com",
-      "status": "bg-green-700"
-    },
-    {
-      "title": "Curve",
-      "text": "Frontend developer",
-      "image": "/curve_logo.png",
-      "url": "https://curve.rip",
-      "status": "bg-red-600"
-    }
-  ]
+  "projects": {
+    "work": [
+      {
+        "title": "Craydia",
+        "label": "Frontend developer",
+        "desc": "I contribute to the ongoing development and enhancement of the website, with a primary focus on frontend responsibilities. My role involves infusing creativity into the project while prioritizing user experience, and continuously exploring innovative design and functionality solutions.",
+        "from": "2023",
+        "to": "Present",
+        "url": "https://craydia.com",
+        "type": "Remote",
+        "stack": [
+          "Javascript",
+          "Typescript",
+          "Next.js",
+          "Tailwindcss",
+          "Bitbucket",
+          "Jira",
+          "MongoDB"
+        ],
+        "link": "https://craydia.com"
+      },
+      {
+        "title": "Curve",
+        "label": "Frontend developer",
+        "desc": "I built the frontend side of the website, working in a team of 3 developers, My responsibilities encompassed architecting, designing, and implementing user interfaces, imbuing them with both creativity and functionality.",
+        "from": "2023",
+        "to": "2023",
+        "url": "https://curve.rip",
+        "type": "Remote",
+        "stack": [
+          "Javascript",
+          "Typescript",
+          "Next.js",
+          "Tailwindcss",
+          "Github"
+        ],
+        "link": "https://curve.rip"
+      },
+      {
+        "title": "Topgames shop",
+        "label": "WP developer",
+        "desc": "I concentrated solely on refining the user interface (UI) of the existing website built in wordpress. Tasked with improving its visual appeal and usability, I implemented various UI and UX enhancements.",
+        "from": "2023",
+        "to": "2023",
+        "url": "https://topgames-shop.com",
+        "type": "Remote",
+        "stack": ["Figma", "Wordpress", "CSS3"],
+        "link": "https://topgames-shop.com"
+      }
+    ],
+    "side": [
+      {
+        "title": "Gloab",
+        "label": "Founder and Full-stack developer",
+        "desc": "Gloab emerges as a travel tracking and experience-sharing platform, meticulously crafted to empower users with the ability to not only remember but also review and share their journeys and experiences. Designed with an unwavering commitment to enhancing the travel experience, Gloab serves as a digital companion, seamlessly weaving together the threads of exploration, discovery, and reflection.",
+        "from": "2024",
+        "to": "Present",
+        "url": "https://gloab.vercel.app",
+        "type": "Remote"
+      },
+      {
+        "title": "SplashStats",
+        "label": "Founder and Full-stack developer",
+        "desc": "SplashStats presents a solution for swimmers of all levels. Dive into precision tracking and refine your techniques with unparalleled insights. Our cutting-edge tools empower you to set and surpass goals, unlocking your full potential stroke by stroke. Join us and make waves in your progress – because every lap counts towards greatness.",
+        "from": "2024",
+        "to": "Present",
+        "url": "https://gloab.vercel.app",
+        "type": "Remote",
+        "link": "https://splashstats.vercel.app"
+      }
+    ]
+  }
 }
