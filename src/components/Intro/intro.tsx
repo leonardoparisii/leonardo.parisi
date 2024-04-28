@@ -9,7 +9,7 @@ const slideUp = {
   },
   exit: {
     top: "-100vh",
-    transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 1.75, ease: [0.76, 0.64, 0.24, 1] },
   },
 };
 
@@ -24,7 +24,7 @@ export default function Intro() {
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
-  } Q${dimension.width / 2} ${dimension.height + 300} 0 ${
+  } Q${dimension.width / 2} ${dimension.height + 500} 0 ${
     dimension.height
   }  L0 0`;
   const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
@@ -34,11 +34,11 @@ export default function Intro() {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 1, ease: [0.23, 1.46, 0.14, 1] },
+      transition: { duration: 1.75, ease: [0.23, 1.46, 0.14, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 2, ease: [0.76, 1.23, 0.24, 1] },
+      transition: { duration: 2.5, ease: [0.76, 1.23, 0.24, 1] },
     },
   };
 
