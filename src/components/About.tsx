@@ -31,7 +31,7 @@ const About = () => {
     <div className="flex flex-col gap-2 w-full">
       <div>
         <Title
-          title="About."
+          text="About."
           className="font-semibold text-[40px] text-dark font-mulish mb-3"
         />
       </div>

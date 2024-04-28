@@ -5,13 +5,15 @@ import {
   useAnimation,
   useInView,
 } from "framer-motion";
+import classNames from "classnames";
 
 type Props = {
   text: string;
-  reference: any;
+  reference?: any;
+  className?: string;
 };
 
-const Title = ({ reference, text }: Props) => {
+const Title = ({ reference, text, className }: Props) => {
   const isTitleInView = useInView(reference, {
     once: true,
     margin: "0px 0px -25% 0px",
@@ -45,7 +47,12 @@ const Title = ({ reference, text }: Props) => {
         }}
         animate={titleControls}
       >
-        <div className="lg:text-7xl md:text-[54px] text-[44px] max-xs:text-4xl font-questrial pb-4 text-nowrap">
+        <div
+          className={classNames(
+            className,
+            "lg:text-7xl md:text-[54px] text-[44px] max-xs:text-4xl font-questrial pb-4 text-nowrap"
+          )}
+        >
           {text}
         </div>
       </motion.div>
