@@ -72,9 +72,7 @@ export default function Home() {
         <i className="bi bi-exclamation-circle"></i>
         site currently under construction.
       </div>
-      <AnimatePresence mode="wait">
-        {isLoading && !isMobile && <Intro />}
-      </AnimatePresence>
+      <AnimatePresence mode="wait">{isLoading && <Intro />}</AnimatePresence>
       <div className="flex flex-col justify-center items-center select-none">
         <div className="h-screen w-screen 2xl:text-[126px] xl:text-[118px] lg:text-8xl md:text-[78px] text-6xl max-xs:text-[54px] font-source sm:pt-64 pt-56">
           <div className="relative flex flex-col items-center justify-center w-full">
