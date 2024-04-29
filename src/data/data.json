@@ -13,9 +13,9 @@
   ],
   "menuLinks": [
     { "path": "/", "label": "Home" },
-    { "path": "#work", "label": "Work" },
+    { "path": "/#work", "label": "Work" },
     { "path": "/about", "label": "About" },
-    { "path": "#contacts", "label": "Contacts" }
+    { "path": "/#contacts", "label": "Contacts" }
   ],
   "projects": {
     "work": [
