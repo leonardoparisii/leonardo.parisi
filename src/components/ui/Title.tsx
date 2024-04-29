@@ -3,10 +3,17 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import classNames from "classnames";
 import { TitleProps } from "@/types";
 
-const Title = ({ reference, text, className }: TitleProps) => {
+const Title = ({
+  reference,
+  text,
+  border = true,
+  viewMargin = "0px 0px -25% 0px",
+  delay = 0,
+  className,
+}: TitleProps) => {
   const isTitleInView = useInView(reference, {
     once: true,
-    margin: "0px 0px -25% 0px",
+    margin: viewMargin,
   });
 
   const titleControls = useAnimation();
@@ -17,7 +24,7 @@ const Title = ({ reference, text, className }: TitleProps) => {
       // If title is in view, start animation
       titleControls.start({
         transform: "translateY(0px)",
-        transition: { type: "spring", duration: 1.5 },
+        transition: { type: "spring", duration: 1.5, delay },
       });
     }
   }, [isTitleInView, titleControls]);
@@ -25,7 +32,7 @@ const Title = ({ reference, text, className }: TitleProps) => {
   return (
     <div
       ref={reference}
-      className="border-b-4 border-dark"
+      className={classNames(border && "border-b-4 border-dark")}
       style={{
         clipPath: "inset(0% 0% 0% 0%)",
       }}
@@ -40,7 +47,7 @@ const Title = ({ reference, text, className }: TitleProps) => {
         <div
           className={classNames(
             className,
-            "lg:text-7xl md:text-[54px] text-[44px] max-xs:text-4xl font-questrial pb-4 text-nowrap"
+            "lg:text-7xl md:text-[54px] text-[44px] max-xs:text-4xl font-questrial pb-4"
           )}
         >
           {text}

@@ -227,7 +227,7 @@ export default function Home() {
                     delay: 4.25,
                   }}
                 >
-                  <div>Scroll up</div>
+                  <div>Scroll down</div>
                 </motion.div>
               </div>
             </div>

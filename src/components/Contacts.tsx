@@ -43,6 +43,12 @@ const Contact = () => {
           {email}
         </Link>
       </div>
+      <div className="text-lg font-questrial text-dark">
+        <Link href={"/about"} className="underline">
+          About page
+        </Link>{" "}
+        for more <br className="xs:hidden" /> information about me :)
+      </div>
     </div>
   );
 };

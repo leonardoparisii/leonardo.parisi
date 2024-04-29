@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export interface TextProps {
   text: string | any;
   secondaryText?: string | any;
@@ -34,6 +32,9 @@ export interface TitleProps {
   text: string;
   reference?: any;
   className?: string;
+  border?: boolean;
+  delay?: number;
+  viewMargin?: string;
 }
 
 export interface ContainerProps {

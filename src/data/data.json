@@ -17,6 +17,22 @@
     { "path": "/about", "label": "About" },
     { "path": "/#contacts", "label": "Contacts" }
   ],
+  "tech_stack": [
+    "React.js",
+    "Next.js",
+    "Tailwindcss",
+    "HTML",
+    "CSS3",
+    "Javascript",
+    "Typescript",
+    "MongoDB",
+    "Supabase",
+    "Framer Motion",
+    "Figma",
+    "Github",
+    "Jira",
+    "Bitbucket"
+  ],
   "projects": {
     "work": [
       {
