@@ -49,7 +49,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  });
 
   return (
     <div className={`flex w-full justify-center items-start`}>
