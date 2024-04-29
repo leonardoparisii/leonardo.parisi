@@ -20,6 +20,7 @@ const Footer = () => {
             parisii.leonardo@gmail.com
             <Button
               title="Get in touch!"
+              link="mailto:parisii.leonardo@gmail.com"
               className="bg-light hover:bg-dark hover:text-light border-0 hover:outline outline-light outline-1 md:px-6 px-4 sm:py-3 py-2 md:text-base text-sm transition-all duration-500"
             />
           </div>

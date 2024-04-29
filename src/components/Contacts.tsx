@@ -33,7 +33,7 @@ const Contact = () => {
         <div>
           <Title text="Contacts" reference={titleRef} />
           <div className="pt-16">
-            <Text text={text} />
+            <Text text={text} className="font-medium" />
           </div>
         </div>
       </div>

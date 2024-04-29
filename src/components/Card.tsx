@@ -44,7 +44,7 @@ const Card = ({
         <div className="flex justify-between w-full">
           <div className="w-fit flex flex-col gap-3">
             <div className="relative flex w-fit items-center">
-              <div className="md:text-[44px] text-4xl font-semibold font-source">
+              <div className="md:text-[44px] text-4xl max-xs:text-[32px] font-semibold font-source text-nowrap">
                 {title}
               </div>
               <Link
@@ -84,7 +84,7 @@ const Card = ({
         </div>
         {workType == "side" && (
           <div className="w-fit flex flex-col gap-3 font-questrial text-xl">
-            <div className="font-questrial text-nowrap">{label}</div>
+            <div className="font-questrial">{label}</div>
             <div className="flex w-fit gap-1.5">
               <div className="w-full">{dates.from}</div>
               <div>-</div>
@@ -101,7 +101,7 @@ const Card = ({
             <Button
               key={i}
               title={item}
-              className="rounded-full py-1.5 px-3 bg-dark text-neutral-300 font-light font-questrial md:text-base text-[15px] max-xs:text-sm"
+              className="rounded-full py-1.5 px-3 bg-dark text-neutral-300 font-thin font-questrial md:text-base text-[15px] max-xs:text-sm"
             ></Button>
           ))}
         </div>

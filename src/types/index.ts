@@ -14,5 +14,6 @@ export interface TitleProps {
 export interface ButtonProps {
   title: string;
   className?: string;
+  link?: string;
   onClick?: () => void;
 }
