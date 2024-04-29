@@ -53,8 +53,8 @@
   left: 0;
   width: 100dvw;
   max-width: 100dvw;
-  height: 100svh;
-  max-height: 100svh;
+  height: 100lvh;
+  max-height: 100lvh;
   padding: 3em;
   background: #101010;
   z-index: 50;
