@@ -1,19 +1,9 @@
-import React, { LegacyRef, Ref, RefObject, useEffect } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import classNames from "classnames";
+import { TitleProps } from "@/types";
 
-type Props = {
-  text: string;
-  reference?: any;
-  className?: string;
-};
-
-const Title = ({ reference, text, className }: Props) => {
+const Title = ({ reference, text, className }: TitleProps) => {
   const isTitleInView = useInView(reference, {
     once: true,
     margin: "0px 0px -25% 0px",

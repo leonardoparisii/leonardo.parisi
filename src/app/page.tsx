@@ -96,7 +96,7 @@ export default function Home() {
                       type: "spring",
                       stiffness: 25,
                       duration: 0.75,
-                      delay: 2.5,
+                      delay: 2,
                     }}
                   >
                     <div className="font-source max-lg:text-3xl max-sm:text-[26px]">
@@ -121,7 +121,7 @@ export default function Home() {
                       type: "spring",
                       stiffness: 25,
                       duration: 0.75,
-                      delay: 3.25,
+                      delay: 2.75,
                     }}
                   >
                     <div className="font-source flex max-sm:flex-col gap-4">
@@ -146,7 +146,7 @@ export default function Home() {
                       type: "spring",
                       stiffness: 25,
                       duration: 0.75,
-                      delay: 3.75,
+                      delay: 3.25,
                     }}
                   >
                     <div className="w-full hidden justify-end max-sm:flex sm:pl-36 xs:pl-28 xxs:pl-20">
@@ -172,7 +172,7 @@ export default function Home() {
                     type: "spring",
                     stiffness: 25,
                     duration: 0.75,
-                    delay: 4.25,
+                    delay: 3.75,
                   }}
                 >
                   <div className="flex max-sm:flex-col items-center justify-center gap-4 max-sm:pl-16 xxs:pl-12">
@@ -198,7 +198,7 @@ export default function Home() {
                     type: "spring",
                     stiffness: 25,
                     duration: 0.75,
-                    delay: 3.5,
+                    delay: 3,
                   }}
                 >
                   <div className="w-full hidden max-sm:flex pl-60 xxs:pl-56">
@@ -224,7 +224,7 @@ export default function Home() {
                     type: "spring",
                     stiffness: 25,
                     duration: 0.75,
-                    delay: 4.75,
+                    delay: 4.25,
                   }}
                 >
                   <div>Scroll up</div>

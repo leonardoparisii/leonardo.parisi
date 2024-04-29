@@ -1,5 +1,4 @@
 "use client";
-
 import { TextProps } from "@/types/index";
 
 export default function Text({ text, secondaryText, className }: TextProps) {

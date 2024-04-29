@@ -7,13 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { usePathname } from "next/navigation";
 import styles from "./styles.module.scss";
 import { TfiClose } from "react-icons/tfi";
-
-const menuLinks = [
-  { path: "/", label: "Home" },
-  { path: "#work", label: "Work" },
-  { path: "#about", label: "About" },
-  { path: "#contact", label: "Contact" },
-];
+import data from "@/data/data.json";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -108,7 +102,7 @@ const Header = () => {
         {/* menu overlay items */}
         <div className="menu-copy">
           <div className="flex flex-col items-center gap-6 menu-links select-none">
-            {menuLinks.map((link, i) => (
+            {data.menuLinks.map((link: any, i: any) => (
               <div className="relative" key={i}>
                 {path == link.path && (
                   <div className="absolute top-[40%] -left-14 h-6 w-6 rounded-full bg-light z-50" />

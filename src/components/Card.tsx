@@ -2,23 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import Button from "./ui/Button";
 import Link from "next/link";
-
-type Props = {
-  workType: "work" | "side";
-  title: string;
-  label: string;
-  desc: string;
-  dates: {
-    from: string;
-    to: string;
-  };
-  url: string;
-  type: string;
-  link?: any;
-} & (
-  | { workType: "work"; stack: string[] }
-  | { workType: "side"; stack?: string[] }
-);
+import { CardProps } from "@/types/index";
 
 const Card = ({
   workType,
@@ -31,7 +15,7 @@ const Card = ({
   stack,
   link,
   ...props
-}: Props) => {
+}: CardProps) => {
   return (
     <div
       className={classNames(
