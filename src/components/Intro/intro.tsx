@@ -24,7 +24,7 @@ export default function Intro() {
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
-  } Q${dimension.width / 2} ${dimension.height + 30} 0 ${
+  } Q${dimension.width / 2} ${dimension.height + 60} 0 ${
     dimension.height
   }  L0 0`;
   const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
