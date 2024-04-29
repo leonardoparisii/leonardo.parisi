@@ -125,9 +125,9 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="flex w-full md:gap-6 gap-20 text-light text-base font-medium select-none">
+          <div className="flex max-sm:items-end w-full md:gap-6 justify-between text-light text-base font-medium select-none">
             <div className="flex flex-col w-fit">
-              <p className="text-3xl">Leonardo Parisi</p>
+              <p className="text-3xl max-sm:hidden">Leonardo Parisi</p>
               <Link href="mailto:parisii.leonardo@gmail.com" target="_top">
                 parisii.leonardo@gmail.com
               </Link>
