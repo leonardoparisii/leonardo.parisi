@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
@@ -68,6 +69,7 @@ export default function RootLayout({
         <Footer />
         <Toaster position="bottom-left" />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
