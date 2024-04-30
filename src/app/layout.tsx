@@ -3,6 +3,7 @@ import "@/styles/global.css";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/react";
 
 const url = new URL("https://leonardoparisi.site");
 const title = "Leonardo Parisi - Portfolio";
@@ -66,6 +67,7 @@ export default function RootLayout({
         <div className="w-full">{children}</div>
         <Footer />
         <Toaster position="bottom-left" />
+        <Analytics />
       </body>
     </html>
   );
