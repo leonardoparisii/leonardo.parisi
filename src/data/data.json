@@ -55,12 +55,12 @@
         "link": "https://craydia.com"
       },
       {
-        "title": "Curve",
+        "title": "Tidal Network",
         "label": "Frontend developer",
         "desc": "I built the frontend side of the website, working in a team of 3 developers, My responsibilities encompassed architecting, designing, and implementing user interfaces, imbuing them with both creativity and functionality.",
         "from": "2023",
         "to": "2023",
-        "url": "https://curve.rip",
+        "url": "https://tidal.rip",
         "type": "Remote",
         "stack": [
           "Javascript",
@@ -69,7 +69,7 @@
           "Tailwindcss",
           "Github"
         ],
-        "link": "https://curve.rip"
+        "link": "https://tidal.rip"
       },
       {
         "title": "Topgames shop",
