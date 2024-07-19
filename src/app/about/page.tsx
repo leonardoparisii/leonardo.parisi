@@ -97,13 +97,138 @@ const page = () => {
               }}
             >
               <Image
-                src={"/ProfileImage.png"}
-                alt="Profile Image"
+                src={"/about_image_1.png"}
+                alt="Profile Image 1"
                 width={300}
                 height={300}
-                className="absolute lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[424px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+                className="absolute z-[1] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[424px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
               />
             </motion.div>
+            {/* <motion.div
+              className="relative"
+              initial={{
+                transform: "translateY(-308px)",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateY(-272px)",
+                opacity: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 25,
+                duration: 0.75,
+                delay: 2.25,
+              }}
+            >
+              <Image
+                src={"/about_image_2.png"}
+                alt="Profile Image 2"
+                width={300}
+                height={300}
+                className="absolute z-[2] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[396px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+              />
+            </motion.div>
+            <motion.div
+              className="relative"
+              initial={{
+                transform: "translateY(-262px)",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateY(-226px)",
+                opacity: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 25,
+                duration: 0.75,
+                delay: 3,
+              }}
+            >
+              <Image
+                src={"/about_image_3.png"}
+                alt="Profile Image 3"
+                width={300}
+                height={300}
+                className="absolute z-[2] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[346px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+              />
+            </motion.div>
+            <motion.div
+              className="relative"
+              initial={{
+                transform: "translateY(-232px)",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateY(-186px)",
+                opacity: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 25,
+                duration: 0.75,
+                delay: 3.75,
+              }}
+            >
+              <Image
+                src={"/about_image_4.png"}
+                alt="Profile Image 4"
+                width={300}
+                height={300}
+                className="absolute z-[2] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[466px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+              />
+            </motion.div>
+            <motion.div
+              className="relative"
+              initial={{
+                transform: "translateY(-256px)",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateY(-232px)",
+                opacity: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 25,
+                duration: 0.75,
+                delay: 4.5,
+              }}
+            >
+              <Image
+                src={"/about_image_5.png"}
+                alt="Profile Image 5"
+                width={300}
+                height={300}
+                className="absolute z-[2] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[546px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+              />
+            </motion.div>
+            <motion.div
+              className="relative"
+              initial={{
+                transform: "translateY(-296px)",
+                opacity: 0,
+              }}
+              animate={{
+                transform: "translateY(-256px)",
+                opacity: 1,
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 25,
+                duration: 0.75,
+                delay: 5.25,
+              }}
+            >
+              <Image
+                src={"/about_image_6.png"}
+                alt="Profile Image 6"
+                width={300}
+                height={300}
+                className="absolute z-[2] lg:-top-52 md:-top-48 sm:-top-40 -top-28 xl:-right-[612px] lg:-right-[342px] md:-right-[312px] sm:-right-[242px] -right-[44px] max-xs:mr-[32px] rounded-2xl 2xl:w-72 xl:w-64 lg:w-60 md:w-56 sm:w-52 w-48"
+              />
+            </motion.div> */}
           </div>
         </div>
       </div>
