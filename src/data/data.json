@@ -36,6 +36,23 @@
   "projects": {
     "work": [
       {
+        "title": "SF hub",
+        "label": "Software developer",
+        "desc": "I built the design, the frontend as well as the backend part of the website, building it from scratch, with a focus on user experience and functionality.",
+        "from": "2024",
+        "to": "2024",
+        "url": "https://www.sf-hub.net",
+        "type": "Remote",
+        "stack": [
+          "Typescript",
+          "Next.js",
+          "Tailwindcss",
+          "Framer Motion",
+          "Supabase"
+        ],
+        "link": "https://www.sf-hub.net"
+      },
+      {
         "title": "Markz3d Shop",
         "label": "Frontend developer",
         "desc": "I contributed to the website development as part of a team of three. My role primarily focused on the development side, infusing creativity into the project, prioritizing user experience, and continuously exploring innovative design and functionality solutions.",
@@ -44,11 +61,10 @@
         "url": "https://markz3d.com",
         "type": "Remote",
         "stack": [
-          "Javascript",
           "Typescript",
           "Next.js",
           "Tailwindcss",
-          "framer-motion",
+          "Framer Motion",
           "Supabase"
         ],
         "link": "https://markz3d.com"
@@ -62,7 +78,6 @@
         "url": "https://craydia.com",
         "type": "Remote",
         "stack": [
-          "Javascript",
           "Typescript",
           "Next.js",
           "Tailwindcss",
@@ -80,13 +95,7 @@
         "to": "2023",
         "url": "https://tidal.rip",
         "type": "Remote",
-        "stack": [
-          "Javascript",
-          "Typescript",
-          "Next.js",
-          "Tailwindcss",
-          "Github"
-        ],
+        "stack": ["Typescript", "Next.js", "Tailwindcss", "Github"],
         "link": "https://tidal.rip"
       }
     ],
